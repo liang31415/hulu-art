@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI定制体验 - 葫匠传韵 | 让AI为你创作专属烙画</title>
+  <meta name="description" content="AI+非遗，让每个人都是创作者。只需描述想法，AI生成专属烙画图案，老艺术家手工烙制。">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .ai-capability-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;}
+    @media(max-width:768px){.ai-capability-grid{grid-template-columns:1fr;}}
+  </style>
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo"><span class="logo-icon">葫芦</span><span class="logo-text">葫匠传韵</span></a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">首页</a>
+        <a href="products.html">产品与模式</a>
+        <a href="ai-custom.html" class="active">AI定制</a>
+        <a href="gallery.html">案例库</a>
+        <a href="about.html">关于我们</a>
+        <a href="#" class="nav-cta" onclick="showToast(event)">立即体验</a>
+      </div>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+  <div class="overlay" id="overlay"></div>
+
+  <section class="page-hero">
+    <h1>AI 定制体验</h1>
+    <p>传统技艺 × 人工智能 · 让每个人都是创作者</p>
+  </section>
+
+  <section class="section">
+    <div class="section-container">
+      <div class="section-header fade-in">
+        <div class="section-tag">◆ 科技赋能非遗</div>
+        <h2 class="section-title">AI + 烙画，前所未有的创作体验</h2>
+        <p class="section-desc">你不需要任何绘画基础，只需要一个想法。AI会将你的描述转化为精美烙画图案，再由非遗传承人亲手烙制。</p>
+      </div>
+      <div class="feature-grid fade-in">
+        <div class="feature-card"><div class="icon">💡</div><h3>零门槛创作</h3><p>无需专业设计能力，用自然语言描述你想要的图案，AI帮你实现创意表达。</p></div>
+        <div class="feature-card"><div class="icon">🖼️</div><h3>实时预览</h3><p>AI生成的图案会实时展示在葫芦上的效果，所见即所得，支持反复调整。</p></div>
+        <div class="feature-card"><div class="icon">🔥</div><h3>手工烙制</h3><p>最终方案由非遗传承人用传统烙铁技法手工烙制，每件都是独一无二的艺术品。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-container">
+      <div class="ai-experience fade-in">
+        <div class="section-tag">◆ 定制流程</div>
+        <h2 class="section-title">四步完成专属定制</h2>
+        <p class="section-desc">从想法到成品，全程透明可控。</p>
+        <div class="ai-flow">
+          <div class="ai-flow-step"><div class="step-num">1</div><div class="step-title">输入需求</div><div class="step-desc">用文字描述图案主题、风格、元素，或上传参考图片</div></div>
+          <div class="ai-flow-step"><div class="step-num">2</div><div class="step-title">AI 生成图案</div><div class="step-desc">AI根据需求生成多个专属方案，支持风格迁移和元素融合</div></div>
+          <div class="ai-flow-step"><div class="step-num">3</div><div class="step-title">预览与调整</div><div class="step-desc">预览葫芦上的实际效果，可调整细节、颜色、构图</div></div>
+          <div class="ai-flow-step"><div class="step-num">4</div><div class="step-title">艺术家烙制</div><div class="step-desc">确认方案后，老艺术家手工烙制，7-15天交付成品</div></div>
+        </div>
+        <div style="text-align:center;margin-top:48px;">
+          <a href="#" class="btn btn-gold" style="font-size:16px;padding:16px 48px;" onclick="showToast(event)">🤖 立即体验AI定制</a>
+          <p style="font-size:13px;color:rgba(255,255,255,0.5);margin-top:12px;">智能体审核中，即将上线</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--ivory);">
+    <div class="section-container">
+      <div class="section-header fade-in">
+        <div class="section-tag">◆ 创作能力</div>
+        <h2 class="section-title">AI 能做什么？</h2>
+      </div>
+      <div class="ai-capability-grid fade-in">
+        <div class="mode-card" style="padding:36px;">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;"><span style="font-size:36px;">📝</span><h3 style="font-family:var(--font-cn);font-size:22px;font-weight:700;color:var(--charcoal);">文字生成图案</h3></div>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.7;margin-bottom:16px;">输入描述，AI自动生成对应图案。</p>
+          <div style="background:var(--cream);border-radius:var(--radius-sm);padding:16px;border-left:3px solid var(--gold);">
+            <p style="font-size:13px;color:var(--text-light);margin-bottom:4px;">示例：</p>
+            <p style="font-size:14px;color:var(--text-secondary);font-style:italic;">"山水画风格，远山近水，一叶扁舟，暮色苍茫"</p>
+          </div>
+        </div>
+        <div class="mode-card" style="padding:36px;">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;"><span style="font-size:36px;">🖼️</span><h3 style="font-family:var(--font-cn);font-size:22px;font-weight:700;color:var(--charcoal);">图片转烙画风格</h3></div>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.7;margin-bottom:16px;">上传照片，AI转化为烙画风格。</p>
+          <div style="background:var(--cream);border-radius:var(--radius-sm);padding:16px;border-left:3px solid var(--gold);">
+            <p style="font-size:13px;color:var(--text-light);margin-bottom:4px;">适合：</p>
+            <p style="font-size:14px;color:var(--text-secondary);font-style:italic;">纪念礼品、婚庆定制、个人肖像、宠物纪念</p>
+          </div>
+        </div>
+        <div class="mode-card" style="padding:36px;">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;"><span style="font-size:36px;">🎭</span><h3 style="font-family:var(--font-cn);font-size:22px;font-weight:700;color:var(--charcoal);">传统与现代融合</h3></div>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.7;margin-bottom:16px;">传统纹样与现代元素巧妙结合。</p>
+          <div style="background:var(--cream);border-radius:var(--radius-sm);padding:16px;border-left:3px solid var(--gold);">
+            <p style="font-size:13px;color:var(--text-light);margin-bottom:4px;">示例：</p>
+            <p style="font-size:14px;color:var(--text-secondary);font-style:italic;">"敦煌飞天元素 + 赛博朋克配色"</p>
+          </div>
+        </div>
+        <div class="mode-card" style="padding:36px;">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;"><span style="font-size:36px;">🏢</span><h3 style="font-family:var(--font-cn);font-size:22px;font-weight:700;color:var(--charcoal);">企业品牌定制</h3></div>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.7;margin-bottom:16px;">企业Logo融入烙画设计，打造文化礼品。</p>
+          <div style="background:var(--cream);border-radius:var(--radius-sm);padding:16px;border-left:3px solid var(--gold);">
+            <p style="font-size:13px;color:var(--text-light);margin-bottom:4px;">适合：</p>
+            <p style="font-size:14px;color:var(--text-secondary);font-style:italic;">周年庆、客户答谢、会议伴手礼</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-container">
+      <div class="section-header fade-in">
+        <div class="section-tag">◆ 定制场景</div>
+        <h2 class="section-title">AI定制适合这些场景</h2>
+      </div>
+      <div class="gallery-grid fade-in">
+        <div class="card" style="text-align:center;">
+          <div class="card-image" style="height:200px;background:linear-gradient(135deg,#FFF0F0,#FFE0E0);display:flex;align-items:center;justify-content:center;"><span style="font-size:56px;">💍</span></div>
+          <div class="card-body"><h3 class="card-title">婚庆纪念</h3><p class="card-text">定制爱情故事，独一无二的纪念品</p></div>
+        </div>
+        <div class="card" style="text-align:center;">
+          <div class="card-image" style="height:200px;background:linear-gradient(135deg,#F0F0FF,#E0E0FF);display:flex;align-items:center;justify-content:center;"><span style="font-size:56px;">🎂</span></div>
+          <div class="card-body"><h3 class="card-title">生日礼物</h3><p class="card-text">根据喜好定制专属图案，心意满满</p></div>
+        </div>
+        <div class="card" style="text-align:center;">
+          <div class="card-image" style="height:200px;background:linear-gradient(135deg,#F5FFF0,#E0FFE0);display:flex;align-items:center;justify-content:center;"><span style="font-size:56px;">🏆</span></div>
+          <div class="card-body"><h3 class="card-title">商务礼品</h3><p class="card-text">企业定制、客户赠礼，彰显文化品味</p></div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:40px;" class="fade-in">
+        <a href="gallery.html" class="btn btn-outline">想直接选图案？浏览案例库 →</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand"><div class="logo-text">葫匠传韵</div><p>以匠心守艺，以科技赋能。让千年烙画艺术在数字时代焕发新生。</p></div>
+      <div><h4>快速导航</h4><ul class="footer-links"><li><a href="index.html">首页</a></li><li><a href="products.html">产品与模式</a></li><li><a href="ai-custom.html">AI定制</a></li><li><a href="gallery.html">案例库</a></li><li><a href="about.html">关于我们</a></li></ul></div>
+      <div><h4>产品系列</h4><ul class="footer-links"><li><a href="products.html">转印纸贴画</a></li><li><a href="products.html">DIY油印纸</a></li><li><a href="products.html">老艺术家烙画</a></li></ul></div>
+      <div><h4>联系我们</h4><ul class="footer-links"><li><a href="about.html">关于我们</a></li><li><a href="about.html">非遗故事</a></li><li><a href="about.html">艺术家团队</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 葫匠传韵 &middot; 烙画葫芦非遗文创 | 传承 &middot; 创新 &middot; 共享</p></div>
+  </footer>
+  <script>
+    const navbar=document.getElementById('navbar');window.addEventListener('scroll',()=>navbar.classList.toggle('scrolled',window.scrollY>50));
+    const hamburger=document.getElementById('hamburger'),navLinks=document.getElementById('navLinks'),overlay=document.getElementById('overlay');
+    hamburger.addEventListener('click',()=>{hamburger.classList.toggle('active');navLinks.classList.toggle('open');overlay.classList.toggle('active');});
+    overlay.addEventListener('click',()=>{hamburger.classList.remove('active');navLinks.classList.remove('open');overlay.classList.remove('active');});
+    navLinks.querySelectorAll('a').forEach(l=>l.addEventListener('click',()=>{hamburger.classList.remove('active');navLinks.classList.remove('open');overlay.classList.remove('active');}));
+    document.querySelectorAll('.fade-in').forEach(el=>new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible')}),{threshold:0.1}).observe(el));
+    function showToast(e){e.preventDefault();const t=document.createElement('div');t.style.cssText='position:fixed;top:80px;left:50%;transform:translateX(-50%);background:#3E2723;color:#E8D5A3;padding:14px 28px;border-radius:8px;font-size:14px;z-index:9999;box-shadow:0 4px 20px rgba(0,0,0,0.2);opacity:0;transition:opacity 0.3s;';t.textContent='智能体正在审核中，上线后即可体验！';document.body.appendChild(t);setTimeout(()=>t.style.opacity='1',10);setTimeout(()=>{t.style.opacity='0';setTimeout(()=>t.remove(),300);},3000);}
+  </script>
+</body>
+</html>
