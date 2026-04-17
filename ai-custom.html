@@ -60,10 +60,7 @@
           <div class="ai-flow-step"><div class="step-num">3</div><div class="step-title">预览与调整</div><div class="step-desc">预览葫芦上的实际效果，可调整细节、颜色、构图</div></div>
           <div class="ai-flow-step"><div class="step-num">4</div><div class="step-title">艺术家烙制</div><div class="step-desc">确认方案后，老艺术家手工烙制，7-15天交付成品</div></div>
         </div>
-        <div style="text-align:center;margin-top:48px;">
-          <a href="#" class="btn btn-gold" style="font-size:16px;padding:16px 48px;" onclick="showToast(event)">🤖 立即体验AI定制</a>
-          <p style="font-size:13px;color:rgba(255,255,255,0.5);margin-top:12px;">智能体审核中，即将上线</p>
-        </div>
+        <div id="coze-chat-container" style="margin-top:48px;min-height:600px;"></div>
       </div>
     </div>
   </section>
@@ -146,6 +143,34 @@
     </div>
     <div class="footer-bottom"><p>&copy; 2026 葫匠传韵 &middot; 烙画葫芦非遗文创 | 传承 &middot; 创新 &middot; 共享</p></div>
   </footer>
+  <!-- Coze 智能体 -->
+  <script src="https://lf-cdn.coze.cn/obj/unpkg/flow-platform/chat-app-sdk/1.1.0-beta.0/libs/cn/index.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      new CozeWebSDK.WebChatClient({
+        config: {
+          bot_id: '7629313639199047718',
+        },
+        auth: {
+          type: 'token',
+          token: 'pat_cztei_hOzZgLHojZp6qysJcvAU1gFM4VLFPRIcaSAuRGDnJ5s9ZOdOKsRiJ22owz8SyX9dG',
+        },
+        componentProps: {
+          title: '葫匠传韵 · AI定制助手',
+        },
+        ui: {
+          bubble: {
+            show: false,
+          },
+          chatWindow: {
+            width: '100%',
+            maxWidth: 800,
+            height: 600,
+          },
+        },
+      });
+    });
+  </script>
   <script>
     const navbar=document.getElementById('navbar');window.addEventListener('scroll',()=>navbar.classList.toggle('scrolled',window.scrollY>50));
     const hamburger=document.getElementById('hamburger'),navLinks=document.getElementById('navLinks'),overlay=document.getElementById('overlay');
