@@ -434,6 +434,34 @@
     </div>
   </footer>
 
+  <!-- Coze 智能体悬浮客服 -->
+  <script src="https://lf-cdn.coze.cn/obj/unpkg/flow-platform/chat-app-sdk/1.1.0-beta.0/libs/cn/index.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      new CozeWebSDK.WebChatClient({
+        config: {
+          bot_id: '7629313639199047718',
+        },
+        componentProps: {
+          title: '葫匠传韵 · AI客服',
+          layout: 'mobile',
+          emoji: true,
+          upload: true,
+        },
+        ui: {
+          bubble: {
+            show: true,
+            icon: '葫芦',
+          },
+          chatWindow: {
+            width: 380,
+            height: 600,
+          },
+        },
+      });
+    });
+  </script>
+
   <script>
     // 导航栏滚动效果
     const navbar = document.getElementById('navbar');
