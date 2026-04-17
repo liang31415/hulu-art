@@ -124,31 +124,28 @@
   <script src="https://lf-cdn.coze.cn/obj/unpkg/flow-platform/chat-app-sdk/1.1.0-beta.0/libs/cn/index.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      var container = document.getElementById('coze-chat-container');
-      if (container) {
-        new CozeWebSDK.WebChatClient({
-          config: {
-            botId: '7629313639199047718',
-          },
-          auth: {
-            type: 'token',
-            token: 'pat_cztei_hOzZgLHojZp6qysJcvAU1gFM4VLFPRIcaSAuRGDnJ5s9ZOdOKsRiJ22owz8SyX9dG',
-            onRefreshToken: () => 'pat_cztei_hOzZgLHojZp6qysJcvAU1gFM4VLFPRIcaSAuRGDnJ5s9ZOdOKsRiJ22owz8SyX9dG',
-          },
-          componentProps: {
-            title: '葫匠传韵 · AI定制助手',
-          },
-          ui: {
-            bubble: {
-              show: false,
-            },
-            chatWindow: {
-              width: '100%',
-              height: 600,
-            },
-          },
-        });
-      }
+      new CozeWebSDK.WebChatClient({
+        config: {
+          botId: '7629313639199047718',
+        },
+        auth: {
+          type: 'token',
+          token: 'pat_cztei_hOzZgLHojZp6qysJcvAU1gFM4VLFPRIcaSAuRGDnJ5s9ZOdOKsRiJ22owz8SyX9dG',
+          onRefreshToken: function() {
+            return 'pat_cztei_hOzZgLHojZp6qysJcvAU1gFM4VLFPRIcaSAuRGDnJ5s9ZOdOKsRiJ22owz8SyX9dG';
+          }
+        },
+        chatBox: {
+          el: document.getElementById('coze-chat-container'),
+          title: '葫匠传韵 · AI定制助手',
+          width: '100%',
+        },
+        ui: {
+          floatWindow: { isNeed: false },
+          header: { isShow: true, isNeedClose: false },
+          footer: { isShow: false },
+        },
+      });
     });
   </script>
   <script>
