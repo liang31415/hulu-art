@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <defs>
+    <radialGradient id="g1" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" style="stop-color:#FAF0D5"/>
+      <stop offset="65%" style="stop-color:#D8BF8A"/>
+      <stop offset="100%" style="stop-color:#8C6814"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="50%" cy="58%" r="50%">
+      <stop offset="0%" style="stop-color:#F5E5B0"/>
+      <stop offset="65%" style="stop-color:#CCA870"/>
+      <stop offset="100%" style="stop-color:#7C5818"/>
+    </radialGradient>
+  </defs>
+  <!-- 葫芦 -->
+  <ellipse cx="200" cy="162" rx="93" ry="112" fill="url(#g1)"/>
+  <ellipse cx="200" cy="348" rx="128" ry="138" fill="url(#g2)"/>
+  <rect x="163" y="253" width="74" height="40" fill="#C09850" rx="10"/>
+  <!-- 藤蔓 -->
+  <path d="M200 52 Q217 34 224 17 Q227 12 222 11 Q218 10 216 17 Q209 30 203 44" fill="none" stroke="#4A3208" stroke-width="3" stroke-linecap="round"/>
+  <path d="M200 52 Q184 36 177 21 Q174 15 179 13 Q183 12 185 19 Q191 31 197 44" fill="none" stroke="#4A3208" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M222 18 Q236 12 240 23 Q235 30 223 26Z" fill="#5A7830" opacity="0.7"/>
+  
+  <!-- 梅花 - 上球 -->
+  <g fill="none" stroke="#3A1800" stroke-linecap="round" stroke-linejoin="round" opacity="0.85">
+    <!-- 枝干 -->
+    <path d="M150 268 Q165 240 185 215 Q195 200 200 188" stroke-width="3"/>
+    <path d="M200 188 Q210 175 220 165 Q230 158 245 155" stroke-width="2.5"/>
+    <path d="M185 215 Q175 205 165 195 Q155 188 148 180" stroke-width="2"/>
+    <path d="M200 220 Q212 210 218 200 Q225 190 232 185" stroke-width="2"/>
+    <path d="M195 200 Q190 190 188 178" stroke-width="2"/>
+    <!-- 梅花朵 - 五瓣每朵 -->
+    <!-- 朵1 -->
+    <circle cx="200" cy="165" r="5" fill="#9B3030" fill-opacity="0.4" stroke-width="1.5"/>
+    <circle cx="192" cy="158" r="5" fill="#9B3030" fill-opacity="0.4" stroke-width="1.5"/>
+    <circle cx="208" cy="158" r="5" fill="#9B3030" fill-opacity="0.4" stroke-width="1.5"/>
+    <circle cx="189" cy="168" r="5" fill="#9B3030" fill-opacity="0.4" stroke-width="1.5"/>
+    <circle cx="211" cy="168" r="5" fill="#9B3030" fill-opacity="0.4" stroke-width="1.5"/>
+    <circle cx="200" cy="163" r="3" fill="#6B1818" stroke-width="1"/>
+    <!-- 朵2 -->
+    <circle cx="245" cy="157" r="5" fill="#9B3030" fill-opacity="0.4" stroke-width="1.5"/>
+    <circle cx="237" cy="150" r="5" fill="#9B3030" fill-opacity="0.4" stroke-width="1.5"/>
+    <circle cx="253" cy="150" r="5" fill="#9B3030" fill-opacity="0.4" stroke-width="1.5"/>
+    <circle cx="234" cy="160" r="5" fill="#9B3030" fill-opacity="0.4" stroke-width="1.5"/>
+    <circle cx="256" cy="160" r="5" fill="#9B3030" fill-opacity="0.4" stroke-width="1.5"/>
+    <circle cx="245" cy="155" r="3" fill="#6B1818" stroke-width="1"/>
+    <!-- 朵3 小半开 -->
+    <circle cx="148" cy="180" r="4.5" fill="#9B3030" fill-opacity="0.35" stroke-width="1.5"/>
+    <circle cx="141" cy="174" r="4.5" fill="#9B3030" fill-opacity="0.35" stroke-width="1.5"/>
+    <circle cx="155" cy="174" r="4.5" fill="#9B3030" fill-opacity="0.35" stroke-width="1.5"/>
+    <circle cx="138" cy="182" r="4.5" fill="#9B3030" fill-opacity="0.35" stroke-width="1.5"/>
+    <circle cx="158" cy="182" r="4.5" fill="#9B3030" fill-opacity="0.35" stroke-width="1.5"/>
+    <circle cx="148" cy="178" r="2.5" fill="#6B1818" stroke-width="1"/>
+    <!-- 朵4 -->
+    <circle cx="232" cy="185" r="4.5" fill="#9B3030" fill-opacity="0.35" stroke-width="1.5"/>
+    <circle cx="225" cy="179" r="4.5" fill="#9B3030" fill-opacity="0.35" stroke-width="1.5"/>
+    <circle cx="239" cy="179" r="4.5" fill="#9B3030" fill-opacity="0.35" stroke-width="1.5"/>
+    <circle cx="222" cy="187" r="4.5" fill="#9B3030" fill-opacity="0.35" stroke-width="1.5"/>
+    <circle cx="242" cy="187" r="4.5" fill="#9B3030" fill-opacity="0.35" stroke-width="1.5"/>
+    <circle cx="232" cy="183" r="2.5" fill="#6B1818" stroke-width="1"/>
+    <!-- 花蕾 -->
+    <path d="M188 178 Q190 170 188 165 Q186 162 185 167 Q184 172 186 177" stroke-width="1.5" fill="#9B3030" fill-opacity="0.3"/>
+    <path d="M220 200 Q222 192 220 187 Q218 184 217 189 Q216 194 218 199" stroke-width="1.5" fill="#9B3030" fill-opacity="0.3"/>
+    <!-- 叶片 -->
+    <path d="M210 215 Q218 205 228 210 Q225 220 213 219Z" stroke-width="1.5" fill="#4A6820" fill-opacity="0.4"/>
+    <path d="M175 240 Q180 228 190 232 Q188 243 178 244Z" stroke-width="1.5" fill="#4A6820" fill-opacity="0.4"/>
+    <!-- 雪花 -->
+    <text x="170" y="170" font-size="10" fill="#9B9B9B" opacity="0.5">❄</text>
+    <text x="255" y="190" font-size="8" fill="#9B9B9B" opacity="0.4">❄</text>
+  </g>
+  
+  <!-- 雀鸟 - 下球 -->
+  <g fill="none" stroke="#3A1800" stroke-linecap="round" stroke-linejoin="round" opacity="0.85">
+    <!-- 枝条 -->
+    <path d="M140 360 Q165 345 195 352 Q220 358 255 345 Q268 340 278 348" stroke-width="3"/>
+    <path d="M195 352 Q200 380 198 410" stroke-width="2.5"/>
+    <path d="M198 410 Q193 430 195 450" stroke-width="2"/>
+    <!-- 小雀1 -->
+    <ellipse cx="175" cy="340" rx="14" ry="10" fill="#5A3010" fill-opacity="0.35" stroke-width="2" transform="rotate(-10 175 340)"/>
+    <circle cx="186" cy="333" r="8" fill="#5A3010" fill-opacity="0.35" stroke-width="2"/>
+    <!-- 鸟喙 -->
+    <path d="M192 331 L200 330 L194 334Z" stroke-width="1.5" fill="#3A1800" fill-opacity="0.5"/>
+    <!-- 鸟眼 -->
+    <circle cx="188" cy="330" r="2" fill="#1A0800"/>
+    <circle cx="189" cy="329" r="0.8" fill="white"/>
+    <!-- 翅膀 -->
+    <path d="M165 338 Q160 328 152 332 Q148 338 155 344" stroke-width="2" fill="#4A2800" fill-opacity="0.2"/>
+    <!-- 尾羽 -->
+    <path d="M163 342 Q150 348 145 360" stroke-width="2"/>
+    <path d="M162 345 Q148 354 144 367" stroke-width="1.5"/>
+    <!-- 小雀2 背对 -->
+    <ellipse cx="240" cy="338" rx="13" ry="9" fill="#5A3010" fill-opacity="0.35" stroke-width="2" transform="rotate(8 240 338)"/>
+    <circle cx="230" cy="332" r="7" fill="#5A3010" fill-opacity="0.35" stroke-width="2"/>
+    <path d="M222 330 L214 329 L220 333Z" stroke-width="1.5" fill="#3A1800" fill-opacity="0.5"/>
+    <circle cx="228" cy="329" r="2" fill="#1A0800"/>
+    <circle cx="227" cy="328" r="0.8" fill="white"/>
+    <path d="M250 336 Q256 326 262 330 Q265 337 258 343" stroke-width="2" fill="#4A2800" fill-opacity="0.2"/>
+    <path d="M251 340 Q264 345 270 357" stroke-width="2"/>
+    <!-- 落叶 -->
+    <path d="M198 415 Q208 408 214 415 Q210 425 200 424Z" stroke-width="1.5" fill="#4A6818" fill-opacity="0.4"/>
+    <path d="M192 435 Q183 428 180 436 Q184 445 193 443Z" stroke-width="1.5" fill="#4A6818" fill-opacity="0.4"/>
+    <!-- 水仙花 -->
+    <circle cx="200" cy="455" r="4" fill="#D4A830" fill-opacity="0.4" stroke-width="1.5"/>
+    <path d="M196 451 Q194 444 196 440 Q200 436 204 440 Q206 444 204 451" stroke-width="1.5" fill="#D4A830" fill-opacity="0.3"/>
+    <path d="M193 453 Q185 450 183 445 Q185 440 190 443 Q194 447 195 452" stroke-width="1.5" fill="#D4A830" fill-opacity="0.3"/>
+    <path d="M207 451 Q215 448 217 443 Q215 438 210 441 Q206 445 205 450" stroke-width="1.5" fill="#D4A830" fill-opacity="0.3"/>
+  </g>
+  
+  <!-- 腰带 -->
+  <path d="M163 263 Q200 257 237 263 Q237 283 200 290 Q163 283 163 263Z" fill="#B09040" opacity="0.45"/>
+  <text x="200" y="280" text-anchor="middle" font-size="8" fill="#3D2000" opacity="0.8" font-family="serif">梅花报春</text>
+</svg>

@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <defs>
+    <radialGradient id="gourdGrad" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" style="stop-color:#F5E6C8;stop-opacity:1" />
+      <stop offset="60%" style="stop-color:#D4B896;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B6914;stop-opacity:1" />
+    </radialGradient>
+    <radialGradient id="gourdGrad2" cx="50%" cy="55%" r="50%">
+      <stop offset="0%" style="stop-color:#F0DDB8;stop-opacity:1" />
+      <stop offset="60%" style="stop-color:#C8A878;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7A5C10;stop-opacity:1" />
+    </radialGradient>
+    <filter id="burnEffect">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" result="noise"/>
+      <feColorMatrix type="saturate" values="0" in="noise" result="grayNoise"/>
+      <feBlend in="SourceGraphic" in2="grayNoise" mode="multiply" result="blend"/>
+      <feComposite in="blend" in2="SourceGraphic" operator="in"/>
+    </filter>
+  </defs>
+  
+  <!-- 葫芦背景 -->
+  <g>
+    <!-- 上球 -->
+    <ellipse cx="200" cy="165" rx="95" ry="115" fill="url(#gourdGrad)"/>
+    <!-- 下球 -->
+    <ellipse cx="200" cy="350" rx="130" ry="140" fill="url(#gourdGrad2)"/>
+    <!-- 腰部连接 -->
+    <rect x="162" y="255" width="76" height="40" fill="#C8A870" rx="10"/>
+    <!-- 顶部藤蔓 -->
+    <path d="M200 52 Q215 35 225 20 Q230 15 225 12 Q220 10 218 16 Q212 28 205 40" fill="none" stroke="#5A3E10" stroke-width="3" stroke-linecap="round"/>
+    <path d="M200 52 Q185 35 175 22 Q170 16 176 13 Q181 11 183 17 Q188 30 196 44" fill="none" stroke="#5A3E10" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- 叶子 -->
+    <path d="M220 25 Q235 18 240 28 Q235 35 222 30 Z" fill="#6B8C3A" opacity="0.7"/>
+    <path d="M180 20 Q165 14 162 24 Q168 30 180 27 Z" fill="#6B8C3A" opacity="0.7"/>
+  </g>
+  
+  <!-- 烙画：龙纹 - 上球 -->
+  <g fill="none" stroke="#3D1F00" stroke-linecap="round" stroke-linejoin="round" opacity="0.85">
+    <!-- 龙头 -->
+    <path d="M200 120 Q215 105 225 110 Q235 115 230 125 Q225 135 215 132 Q205 130 200 120Z" stroke-width="2.5" fill="#5C3010" fill-opacity="0.4"/>
+    <!-- 龙角 -->
+    <path d="M218 108 Q222 98 226 95 Q228 94 227 98 Q225 103 221 108" stroke-width="2"/>
+    <path d="M228 112 Q234 105 238 103 Q240 103 239 107 Q236 111 230 114" stroke-width="2"/>
+    <!-- 龙眼 -->
+    <circle cx="225" cy="116" r="3" fill="#8B0000" stroke="#3D1F00" stroke-width="1.5"/>
+    <!-- 龙须 -->
+    <path d="M228 118 Q240 115 248 118 Q255 120 252 125" stroke-width="1.5"/>
+    <path d="M228 121 Q237 125 242 130" stroke-width="1.5"/>
+    <!-- 龙身蜿蜒 -->
+    <path d="M210 125 Q195 135 185 150 Q178 165 190 175 Q202 185 195 200 Q188 215 175 220" stroke-width="3"/>
+    <!-- 龙鳞纹 -->
+    <path d="M192 140 Q196 137 200 140 Q196 143 192 140Z" stroke-width="1.5" fill="#5C3010" fill-opacity="0.3"/>
+    <path d="M187 152 Q191 149 195 152 Q191 155 187 152Z" stroke-width="1.5" fill="#5C3010" fill-opacity="0.3"/>
+    <path d="M188 165 Q192 162 196 165 Q192 168 188 165Z" stroke-width="1.5" fill="#5C3010" fill-opacity="0.3"/>
+    <!-- 龙爪 -->
+    <path d="M192 155 Q182 148 178 155 Q175 158 178 162 Q180 165 183 162" stroke-width="2"/>
+    <path d="M178 155 Q172 150 170 155" stroke-width="1.5"/>
+    <path d="M176 157 Q171 155 169 160" stroke-width="1.5"/>
+    <!-- 火焰纹 -->
+    <path d="M230 130 Q240 125 245 135 Q248 140 243 145 Q237 148 232 143" stroke-width="2" fill="#8B3010" fill-opacity="0.2"/>
+    <path d="M240 128 Q247 120 250 128 Q252 132 248 136" stroke-width="1.5"/>
+    <!-- 云纹装饰 -->
+    <path d="M155 175 Q160 165 170 170 Q175 175 170 182 Q163 185 157 180 Q152 175 155 175" stroke-width="2" fill="#5C3010" fill-opacity="0.15"/>
+    <path d="M225 185 Q230 178 238 182 Q242 187 238 193 Q232 196 227 192 Q222 187 225 185" stroke-width="2" fill="#5C3010" fill-opacity="0.15"/>
+  </g>
+  
+  <!-- 烙画：凤凰 - 下球 -->
+  <g fill="none" stroke="#3D1F00" stroke-linecap="round" stroke-linejoin="round" opacity="0.85">
+    <!-- 凤凰身体 -->
+    <ellipse cx="200" cy="340" rx="30" ry="45" stroke-width="2.5" fill="#6B3A10" fill-opacity="0.2" transform="rotate(-15 200 340)"/>
+    <!-- 凤头 -->
+    <path d="M215 310 Q225 300 230 305 Q232 312 225 315 Q218 316 215 310Z" stroke-width="2" fill="#6B3A10" fill-opacity="0.3"/>
+    <!-- 凤冠 -->
+    <path d="M225 302 Q228 290 232 285 Q234 284 233 290 Q231 296 227 300" stroke-width="2"/>
+    <path d="M229 300 Q235 288 240 285 Q242 285 240 291 Q237 297 232 301" stroke-width="1.5"/>
+    <path d="M222 302 Q223 290 220 285 Q219 284 220 290 Q221 296 222 301" stroke-width="1.5"/>
+    <!-- 凤眼 -->
+    <circle cx="228" cy="308" r="2.5" fill="#6B0000" stroke="#3D1F00" stroke-width="1.5"/>
+    <!-- 凤尾展开 -->
+    <path d="M185 370 Q170 390 160 410 Q155 420 162 425 Q168 427 172 418 Q178 400 188 385" stroke-width="2.5"/>
+    <path d="M195 375 Q185 400 180 420 Q177 430 184 433 Q190 434 192 424 Q196 408 200 388" stroke-width="2.5"/>
+    <path d="M205 375 Q205 400 203 420 Q202 430 208 432 Q214 432 214 422 Q213 406 210 388" stroke-width="2.5"/>
+    <path d="M215 372 Q222 396 225 415 Q227 425 221 428 Q215 429 215 419 Q214 403 212 385" stroke-width="2.5"/>
+    <path d="M222 368 Q235 390 240 408 Q243 418 237 422 Q231 423 230 413 Q227 397 220 380" stroke-width="2.5"/>
+    <!-- 凤尾眼斑 -->
+    <ellipse cx="163" cy="420" rx="6" ry="4" stroke-width="1.5" fill="#6B3A10" fill-opacity="0.25"/>
+    <ellipse cx="182" cy="428" rx="6" ry="4" stroke-width="1.5" fill="#6B3A10" fill-opacity="0.25"/>
+    <ellipse cx="206" cy="430" rx="6" ry="4" stroke-width="1.5" fill="#6B3A10" fill-opacity="0.25"/>
+    <ellipse cx="230" cy="424" rx="6" ry="4" stroke-width="1.5" fill="#6B3A10" fill-opacity="0.25"/>
+    <!-- 翅膀 -->
+    <path d="M175 335 Q155 325 145 335 Q140 342 148 350 Q158 355 172 348" stroke-width="2.5" fill="#6B3A10" fill-opacity="0.15"/>
+    <path d="M225 330 Q245 318 258 328 Q262 335 255 343 Q244 348 228 342" stroke-width="2.5" fill="#6B3A10" fill-opacity="0.15"/>
+    <!-- 羽毛细节 -->
+    <path d="M148 338 Q144 332 148 328" stroke-width="1.5"/>
+    <path d="M151 343 Q147 338 150 333" stroke-width="1.5"/>
+    <path d="M255 332 Q260 327 256 323" stroke-width="1.5"/>
+    <path d="M253 338 Q258 334 254 330" stroke-width="1.5"/>
+    <!-- 祥云纹 -->
+    <path d="M155 310 Q158 302 164 306 Q167 311 162 317 Q157 319 153 315 Q150 311 155 310" stroke-width="1.5" fill="#6B3A10" fill-opacity="0.1"/>
+    <path d="M235 360 Q238 352 244 356 Q247 361 242 367 Q237 369 233 365 Q230 361 235 360" stroke-width="1.5" fill="#6B3A10" fill-opacity="0.1"/>
+  </g>
+  
+  <!-- 腰部装饰带 -->
+  <g>
+    <path d="M162 265 Q200 258 238 265 Q238 285 200 292 Q162 285 162 265Z" fill="#B8945A" opacity="0.5"/>
+    <path d="M167 270 Q200 264 233 270" stroke="#3D1F00" stroke-width="1" fill="none" opacity="0.5"/>
+    <path d="M165 278 Q200 272 235 278" stroke="#3D1F00" stroke-width="1" fill="none" opacity="0.5"/>
+    <!-- 腰带小纹样 -->
+    <text x="200" y="282" text-anchor="middle" font-size="8" fill="#3D1F00" opacity="0.7" font-family="serif">龙凤呈祥</text>
+  </g>
+</svg>

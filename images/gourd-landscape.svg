@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <defs>
+    <radialGradient id="g1" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" style="stop-color:#F8EDCC"/>
+      <stop offset="65%" style="stop-color:#D6BC8A"/>
+      <stop offset="100%" style="stop-color:#8A6612"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="50%" cy="60%" r="50%">
+      <stop offset="0%" style="stop-color:#F2E2B0"/>
+      <stop offset="65%" style="stop-color:#C8A060"/>
+      <stop offset="100%" style="stop-color:#7A5410"/>
+    </radialGradient>
+  </defs>
+  <!-- 葫芦 -->
+  <ellipse cx="200" cy="162" rx="93" ry="112" fill="url(#g1)"/>
+  <ellipse cx="200" cy="348" rx="128" ry="138" fill="url(#g2)"/>
+  <rect x="163" y="253" width="74" height="40" fill="#C09850" rx="10"/>
+  <!-- 藤蔓 -->
+  <path d="M200 52 Q218 35 225 18 Q228 13 223 12 Q219 11 217 18 Q210 30 204 44" fill="none" stroke="#4A3208" stroke-width="3" stroke-linecap="round"/>
+  <path d="M200 52 Q183 37 176 22 Q173 16 178 14 Q182 12 184 19 Q190 31 197 44" fill="none" stroke="#4A3208" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M223 20 Q237 14 241 24 Q236 31 224 27Z" fill="#5A7830" opacity="0.7"/>
+  
+  <!-- 山水画 - 上球：远山 -->
+  <g fill="none" stroke="#3D2000" stroke-linecap="round" stroke-linejoin="round" opacity="0.82">
+    <!-- 远山层叠 -->
+    <path d="M120 210 Q140 165 160 175 Q170 178 185 160 Q195 148 200 155 Q205 148 215 160 Q228 175 240 170 Q255 165 270 195 Q275 205 280 218" stroke-width="2" fill="#4A2800" fill-opacity="0.12"/>
+    <path d="M112 220 Q130 180 150 188 Q162 192 173 177 Q183 165 200 170 Q217 165 227 177 Q238 192 250 188 Q268 182 285 220" stroke-width="2.5" fill="#3D2000" fill-opacity="0.08"/>
+    <!-- 近山 -->
+    <path d="M130 240 Q148 205 165 215 Q175 220 200 200 Q225 218 242 215 Q258 208 272 240" stroke-width="3" fill="#5A3200" fill-opacity="0.2"/>
+    <!-- 山顶松树剪影 -->
+    <path d="M197 202 L200 190 L203 202Z" stroke-width="1.5" fill="#2A1800" fill-opacity="0.5"/>
+    <path d="M194 205 L200 188 L206 205Z" stroke-width="1" fill="none"/>
+    <path d="M192 208 L200 186 L208 208Z" stroke-width="1" fill="none"/>
+    <!-- 水面 -->
+    <path d="M125 250 Q160 245 200 248 Q240 245 275 250" stroke-width="1.5"/>
+    <path d="M128 256 Q165 252 200 254 Q235 252 272 256" stroke-width="1"/>
+    <!-- 水中倒影波纹 -->
+    <path d="M155 260 Q165 258 175 260 Q165 262 155 260" stroke-width="1"/>
+    <path d="M220 262 Q230 260 240 262 Q230 264 220 262" stroke-width="1"/>
+    <!-- 小船 -->
+    <path d="M188 257 Q200 252 212 257 Q212 262 200 264 Q188 262 188 257Z" stroke-width="1.5" fill="#3D2000" fill-opacity="0.3"/>
+    <path d="M200 257 L200 248 Q205 250 206 252" stroke-width="1.5"/>
+    <!-- 飞鸟 -->
+    <path d="M145 178 Q150 173 155 178" stroke-width="1.5"/>
+    <path d="M158 170 Q164 165 170 170" stroke-width="1.5"/>
+    <path d="M230 165 Q236 160 242 165" stroke-width="1.5"/>
+  </g>
+  
+  <!-- 山水画 - 下球：近景亭台 -->
+  <g fill="none" stroke="#3D2000" stroke-linecap="round" stroke-linejoin="round" opacity="0.82">
+    <!-- 亭子 -->
+    <path d="M175 345 L200 318 L225 345Z" stroke-width="2.5" fill="#4A2800" fill-opacity="0.2"/>
+    <path d="M170 345 L230 345" stroke-width="2"/>
+    <!-- 亭柱 -->
+    <line x1="182" y1="345" x2="182" y2="375" stroke-width="2"/>
+    <line x1="218" y1="345" x2="218" y2="375" stroke-width="2"/>
+    <line x1="200" y1="318" x2="200" y2="326" stroke-width="2"/>
+    <!-- 栏杆 -->
+    <line x1="182" y1="375" x2="218" y2="375" stroke-width="2"/>
+    <line x1="190" y1="375" x2="190" y2="365" stroke-width="1.5"/>
+    <line x1="200" y1="375" x2="200" y2="365" stroke-width="1.5"/>
+    <line x1="210" y1="375" x2="210" y2="365" stroke-width="1.5"/>
+    <!-- 飘带 -->
+    <path d="M200 325 Q215 330 220 325 Q225 320 230 325" stroke-width="1.5"/>
+    <!-- 地面石头 -->
+    <path d="M160 395 Q168 388 178 392 Q182 396 177 402 Q169 405 161 401Z" stroke-width="1.5" fill="#4A2800" fill-opacity="0.15"/>
+    <path d="M218 392 Q226 386 235 390 Q238 395 234 400 Q226 402 219 398Z" stroke-width="1.5" fill="#4A2800" fill-opacity="0.15"/>
+    <!-- 松树 -->
+    <line x1="155" y1="420" x2="155" y2="350" stroke-width="3"/>
+    <path d="M140 370 Q155 355 170 370" stroke-width="2" fill="#3A2800" fill-opacity="0.2"/>
+    <path d="M135 385 Q155 367 175 385" stroke-width="2" fill="#3A2800" fill-opacity="0.2"/>
+    <path d="M137 400 Q155 382 173 400" stroke-width="2" fill="#3A2800" fill-opacity="0.2"/>
+    <!-- 右侧竹子 -->
+    <line x1="245" y1="420" x2="248" y2="340" stroke-width="2.5"/>
+    <line x1="250" y1="420" x2="253" y2="345" stroke-width="2"/>
+    <path d="M248 362 Q258 356 264 362" stroke-width="1.5" fill="none"/>
+    <path d="M250 375 Q260 369 266 375" stroke-width="1.5" fill="none"/>
+    <path d="M246 390 Q254 384 260 390" stroke-width="1.5" fill="none"/>
+    <!-- 水波 -->
+    <path d="M130 440 Q160 435 200 438 Q240 435 270 440" stroke-width="1.5"/>
+    <path d="M132 448 Q165 444 200 446 Q235 444 268 448" stroke-width="1"/>
+    <!-- 倒影 -->
+    <line x1="155" y1="440" x2="155" y2="455" stroke-width="1.5" opacity="0.5"/>
+    <path d="M145 455 Q155 450 165 455" stroke-width="1" opacity="0.4"/>
+  </g>
+  
+  <!-- 腰带 -->
+  <path d="M163 263 Q200 257 237 263 Q237 283 200 290 Q163 283 163 263Z" fill="#B09040" opacity="0.45"/>
+  <text x="200" y="280" text-anchor="middle" font-size="8" fill="#3D2000" opacity="0.8" font-family="serif">溪山行旅</text>
+</svg>
